@@ -1,0 +1,242 @@
+/* @media (max-width: 1440px){} */
+/* noutbuk */
+/* @media (max-width: 1366px){} */
+/* noutbuk */
+/* @media (max-width: 1320px){} */
+/* noutbuk */
+/* @media (max-width: 1290px){} */
+/* noutbuk */
+/* @media (max-width: 1140px){} */
+/* noutbuk */
+@media (max-width: 1024px) { /* iped */
+
+    .collection__cards {
+        overflow: auto;
+        display: flex;
+        column-gap: 20px;
+        scroll-snap-type: x mandatory;
+        
+    }
+
+    .collection__card {
+        flex-shrink: 0;
+        scroll-snap-align: center;
+    }
+
+    .films__cards {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .films__card {
+        max-width: none;
+        width: 48%;
+    }
+
+    *::-webkit-scrollbar {
+        height: 0;
+    }
+
+    .tex-linted:hover {
+        -webkit-line-clamp: unset;
+    }
+}
+/* @media (max-width: 992px) {} *//* iped */
+@media (max-width: 768px) {/* iped */
+    .nav {
+        padding: 20px 0;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .nav__menyu {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+    }
+
+    .nav__line {
+        position: relative;
+        height: 2px;
+        width: 100%;
+        background: var(--tex);
+    }
+
+    .nav__line::before,
+    .nav__line::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        height: 100%;
+        width: 100%;
+        background: inherit;
+    }
+
+    .nav__line::after {
+        top: 10px;
+    }
+
+    .video__content {
+        background: linear-gradient(90deg, #DEF7FF 0%, #F4FCFF 35.64%, rgba(255, 255, 255, 0) 100.72%);
+    }
+
+    .series__cards {
+        text-align: center;
+        gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+
+    .series__card:nth-of-type(2) .series__banner {
+        object-position: 0 35%;
+    }
+
+    .series__card:nth-of-type(2) {
+        grid-column: 4 span;
+        grid-row: 1 span;
+    }
+
+    .series__card:nth-of-type(3) {
+        grid-column: 2 span;
+        grid-row: 1 span;
+    }
+
+    .series__card:nth-of-type(4) {
+        grid-column: 2 span;
+        grid-row: 1 span;
+    }
+
+    .series__card:nth-of-type(5) {
+        grid-column: 2 span;
+        grid-row: 1 span;
+    }
+
+    .series__card:nth-of-type(6) {
+        grid-column: 2 span;
+        grid-row: 1 span;
+    }
+
+    .footer__content {
+        flex-direction: column;
+    }
+
+    .app {
+        margin-bottom: 20px;
+    }
+
+    .footer__tex {
+        font-size: 16px;
+    }
+}
+/* @media (max-width: 736px){  */
+/* phone */
+/* @media (max-width: 684px){} */
+/* phone */
+@media (max-width: 667px){/* phone */
+  
+    .video__content {
+        background: linear-gradient(90deg, #DEF7FF 0%, #F4FCFF 0.36%, rgba(255, 255, 255, 0) 100.72%);
+    }
+}
+@media (max-width: 576px){
+    .header__banner {
+        object-position: 75%;
+    }
+
+    .header__title {
+        font-size: 48px;
+    }
+
+    .video__content {
+        background: rgba(255, 255, 255, 0.6);
+    }
+}
+/* phone */
+@media (max-width: 460px){
+    .ads {
+        font-size: 14px;
+        padding: 16px 0;
+    }
+
+    .nav__logo {
+        width: 45%;
+    }
+
+    .nav__link-logo {
+        font-size: 14px;
+    }
+
+    .nav__menyu {
+       width: 30px;
+    }
+
+    .header__title {
+        font-size: 36px;
+    }
+
+    .films__card {
+        width: 100%;
+    }
+
+    .wideo__img {
+        width: 100%;
+    }
+
+    .video__tex {
+        -webkit-line-clamp: 3;
+    }
+
+    .video__tex:hover {
+        -webkit-line-clamp: unset;
+    }
+
+    .video__banner {
+        width: 100%;
+    }
+
+    .series__card:nth-of-type(2),.series__card:nth-of-type(3),.series__card:nth-of-type(4),.series__card:nth-of-type(5),.series__card:nth-of-type(6) {
+        grid-column: 4 span ;
+    }
+
+    .video__banner {
+        width: 161%;
+        object-fit: cover;
+        padding: 11px 37px;
+    }   
+
+    .films__banner {
+        object-position: 0 0;
+    }
+
+
+}
+/* @media (max-width: 412px){} */
+/* phone */
+@media (max-width: 375px){
+    .series__cards {
+        flex-shrink: 1;
+        display: grid;
+        grid-template-columns: (1fr);
+        grid-template-rows: (6, 1fr );
+    }
+}
+/* phone */
+@media (max-width: 360px){
+    .header__btns {
+        flex-direction: column;
+        row-gap: 20px;
+        width: max-content;
+    }
+
+    .header__title {
+        font-size: 30px;
+    }
+}
+/* phone */
+/* @media (max-width: 320px){} */
+/* phone */
